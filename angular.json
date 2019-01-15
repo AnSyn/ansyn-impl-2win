@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ansyn-implementation": {
+    "ansyn-impl-2win": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ansyn-implementation",
+            "outputPath": "dist/ansyn-impl-2win",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ansyn-implementation:build"
+            "browserTarget": "ansyn-impl-2win:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ansyn-implementation:build:production"
+              "browserTarget": "ansyn-impl-2win:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ansyn-implementation:build"
+            "browserTarget": "ansyn-impl-2win:build"
           }
         },
         "test": {
@@ -113,7 +113,7 @@
         }
       }
     },
-    "ansyn-implementation-e2e": {
+    "ansyn-impl-2win-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -121,11 +121,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ansyn-implementation:serve"
+            "devServerTarget": "ansyn-impl-2win:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ansyn-implementation:serve:production"
+              "devServerTarget": "ansyn-impl-2win:serve:production"
             }
           }
         },
@@ -141,5 +141,5 @@
       }
     }
   },
-  "defaultProject": "ansyn-implementation"
+  "defaultProject": "ansyn-impl-2win"
 }
